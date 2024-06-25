@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>جدول فرم عملکردی</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/font.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="full-height">
+      <div class="d-block d-md-none d-lg-none hamburgerbutton pr-4">
+        <img
+          src="./public/images/Shopicons_Regular_Chapters.svg"
+          alt="Shopicons_Regular_Chapters.svg"
+        />
+      </div>
+      <div class="menusection">
+        <div class="menuback" id="menu-mob">
+          <div class="menu d-none d-md-block d-lg-block" id="menu2">
+            <div class="menuheader">
+              <div class="menuimg" id="menuimg">
+                <img
+                  src="./public/images/Shopicons_Bold_Grid.svg"
+                  alt="Shopicons_Bold_Grid.svg"
+                  class="firstbutton"
+                  onclick="mymenu()"
+                />
+                <img
+                  src="./public/images/Shopicons_Bold_Grid.svg"
+                  alt="Shopicons_Bold_Grid.svg"
+                  class="secondbutton d-none"
+                  onclick="mymenuoff()"
+                />
+              </div>
+              <div class="menuheadtext d-none">سامانه lms</div>
+              <span class="tooltip-text">سامانه lms</span>
+            </div>
+            <div class="menubody">
+              <a href="#" class="menuitem">
+                <div class="menuii">
+                  <img
+                    src="./public/images/icon-44.svg"
+                    alt="🦆 icon _copy_.svg"
+                  />
+                </div>
+                <div class="menubodytext d-none">آموزش های من</div>
+                <div class="tooltip-text">آموزش های من</div>
+              </a>
+              <a href="#" class="menuitem">
+                <div class="menuii">
+                  <img
+                    src="./public/images/icon-newspaper.svg"
+                    alt="🦆 icon _newspaper_.svg"
+                  />
+                </div>
+                <div class="menubodytext d-none">ارزشیابی دوره ها</div>
+                <div class="tooltip-text">ارزشیابی دوره ها</div>
+              </a>
+              <a href="#" class="menuitem">
+                <div class="menuii">
+                  <img
+                    src="./public/images/medical-icon_i-health-education.svg"
+                    alt="medical-icon_i-health-education.svg"
+                  />
+                </div>
+                <div class="menubodytext d-none">پنل رویداد تیمی</div>
+                <div class="tooltip-text">پنل رویداد تیمی</div>
+              </a>
+              <a href="#" class="menuitem activemenu">
+                <div class="menuii">
+                  <img
+                    src="./public/images/Group 626.svg"
+                    alt="Group 626.svg"
+                  />
+                </div>
+                <div class="menubodytext d-none">کارتابل</div>
+                <div class="tooltip-text">کارتابل</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="basebox">
+        <div class="baseboxhead">
+          <div>
+            <img src="./public/images/gozaresh.svg" alt="gozaresh.svg" />
+          </div>
+          <div class="bbhtext">جدول فرم عملکرد فنی</div>
+          <div>
+            <img src="./public/images/infoicon.svg" alt="infoicon.svg" />
+          </div>
+        </div>
+        <div class="baseboxbody">
+          <div class="d-flex justify-content-between g">
+            <div class="padinput col-lg-4 col-md-6 col-7">
+              <div class="pinput">
+                <input
+                  type="text"
+                  class="control binput search"
+                  placeholder="جستجو بر اساس..."
+                  id="searchInput"
+                />
+              </div>
+            </div>
+            <a href="FunctionalFormadd.html" class="newbutton">
+              <div>ثبت مورد جدید</div>
+            </a>
+          </div>
+          <div class="updivtable pt-4">
+            <div class="rightdivtable d-flex gap-4">
+              <div>نمایش</div>
+              <div>
+                <select
+                  name=""
+                  id="selectOptions"
+                  class="selecttable form-control"
+                >
+                  <option value="10">10</option>
+                  <option value="25">25</option>
+                  <option value="30">30</option>
+                </select>
+              </div>
+              <div>مورد</div>
+            </div>
+            <div class="leftdivtable">
+              <div>تعداد کل : <span id="totalCount"></span></div>
+              <div class="tableimg">
+                <img
+                  src="./public/images/vscode-icons_file-type-excel.svg"
+                  alt="vscode-icons_file-type-excel.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="boardtable">
+            <div class="table-responsive">
+              <table class="table" id="userTable">
+                <thead>
+                  <tr>
+                    <th scope="col" class="widthth">ردیف</th>
+                    <th scope="col">نام نام خانوادگی</th>
+                    <th scope="col">نام دوره</th>
+                    <th scope="col">تاریخ تولد</th>
+                    <th scope="col">کانال آموزش</th>
+                    <th scope="col">وضعیت بررسی</th>
+                    <th scope="col">عملیات</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+              </table>
+            </div>
+          </div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item" id="prevPage">
+                <a class="page-link" href="#">قبلی</a>
+              </li>
+
+              <li class="page-item" id="nextPage">
+                <a class="page-link" href="#">بعدی</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

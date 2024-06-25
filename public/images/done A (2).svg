@@ -1,0 +1,11 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M22 12c0 5.523-4.477 10-10 10-5.522 0-10-4.477-10-10C2 6.478 6.478 2 12 2c5.523 0 10 4.478 10 10z" fill="url(#8ltasgpp4a)"/>
+    <path d="M18.134 7.723a1 1 0 0 0-1.425 0l-6.255 6.345a1 1 0 0 1-1.424 0L7.29 12.305a1 1 0 0 0-1.424 0l-.176.179a1 1 0 0 0 0 1.403l3.339 3.39a1 1 0 0 0 1.424 0l7.855-7.973a1 1 0 0 0 0-1.403l-.175-.178z" fill="#fff"/>
+    <defs>
+        <radialGradient id="8ltasgpp4a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 12) scale(11.45)">
+            <stop stop-color="rgb(96 231 201)"/>
+            <stop offset=".508" stop-color="#3CC1A3"/>
+            <stop offset="1" stop-color="#33A289"/>
+        </radialGradient>
+    </defs>
+</svg>
